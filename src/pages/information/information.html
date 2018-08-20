@@ -1,0 +1,30 @@
+
+<ion-header>
+
+  <ion-navbar text-center color="alice">
+    <ion-title>Course {{course.number}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+
+    <ion-card *ngFor="let lesson of course.lessons" color="sky">
+        <ion-card-header>
+          <h2>Lesson: {{lesson.number}}</h2>
+          <h2>{{lesson.title}}</h2>
+        </ion-card-header>
+      
+        
+        <ion-card-content>
+           <P style="text-align:right;"><img  src="{{lesson.image}}"></P>
+           <p>{{lesson.description}}</p>
+        </ion-card-content>
+      </ion-card>
+
+</ion-content>
+
+
+
+     
